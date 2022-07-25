@@ -2,6 +2,11 @@
   scrollbar-width: thin;
   scrollbar-color: #18181e rgba(24, 24, 30, 0.76);
   background-color: #23222d;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #23222d;
 }
 
 .menu {
@@ -12,6 +17,10 @@
   width: 100%;
   background-color: #18181e;
   justify-content: space-between;
+}
+
+.icon-menu {
+  display: none;
 }
 
 .menu-link {
@@ -27,7 +36,7 @@
 }
 
 .selected {
-  background-color: #d99243;
+  background-color: #d99243 !important;
 }
 
 .menu-left, .menu-right {
@@ -36,7 +45,6 @@
 
 .main {
   display: flex;
-
   color: #f7ab48;
   flex-direction: column;
   margin-top: 38px;
@@ -44,7 +52,6 @@
 
 .title {
   margin-left: 40px;
-  width: 90%;
   height: 40px;
 }
 
@@ -54,6 +61,80 @@
   flex-wrap: wrap;
   color: white;
   padding-bottom: 80px;
-  margin-left: 40px;
+  margin: 0 40px;
+  justify-content: center;
 }
 
+img {
+  border-radius: 6px;
+}
+
+.metacritic {
+  padding: 10px;
+  line-height: 24px;
+  border-radius: 3px;
+}
+
+.metacritic-good {
+  background-color: #6c3 !important;
+}
+
+.time-to-beat {
+  display: flex;
+  flex-direction: row;
+}
+
+.time-to-beat-col {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.time-to-beat-header {
+  display: inline-flex;
+  border-bottom: 1px solid white;
+}
+
+.time-to-beat-value {
+  font-size: larger;
+}
+
+@media (max-width: 700px) {
+  .menu {
+    display: none;
+  }
+
+  .icon-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #18181e;
+  }
+
+  .menu-link-icon {
+    background-color: inherit;
+  }
+
+  .menu-link-icon i {
+    color: white;
+    padding: 3px;
+    background-color: inherit;
+  }
+
+  .main {
+    margin-top: 20px;
+  }
+
+  .title {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    margin: 0 20px;
+  }
+}

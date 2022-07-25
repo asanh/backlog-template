@@ -1,24 +1,33 @@
 .main-img {
-  width: 25%;
-  height: 100%;
+  width: 400px;
+  height: 500px;
 }
 
 .game-card {
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .game-form {
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
-  margin-top: 20px;
+  margin: 0 20px 20px 60px;
+  width: 100%;
+  background-color: #313140;
+  border-radius: 6px;
+}
+
+.game-form * {
+  background-color: inherit;
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 99%;
+  margin-bottom: 25px;
+  margin-left: 20px;
 }
 
 .container {
@@ -27,4 +36,120 @@
 
 .description-item {
   width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.description-item-full {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.time-to-beat-col:not(:first-child) {
+  margin-left: 15px;
+}
+
+.time-to-beat-row {
+  margin-top: 60px;
+}
+
+.label-full {
+  width: 15%;
+}
+
+.label {
+  width: 30%;
+}
+
+.value {
+  width: 60%;
+}
+
+.tab-block-title {
+  width: 100%;
+  font-size: larger;
+  text-decoration: underline #d99243;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.second-block {
+  margin-top: 50px;
+}
+
+
+@media (max-width: 1440px) {
+  .main-img {
+    width: 320px;
+    height: 400px;
+  }
+
+  .row {
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+
+  .description-item {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .label-full {
+    width: 30%;
+  }
+
+  .time-to-beat-col {
+    width: 100px;
+  }
+}
+
+@media (max-width: 1360px) {
+  .time-to-beat {
+    flex-direction: column;
+  }
+
+  .time-to-beat-col:not(:first-child) {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .game-card {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .game-form {
+    margin: 20px 0 0;
+  }
+
+  .label {
+    width: 40%;
+  }
+
+  .label-full {
+    width: 40%;
+  }
+
+  .value {
+    width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .label {
+    width: 50%;
+  }
+
+  .value {
+    width: 40%;
+  }
+
+  .label-full {
+    width: 50%;
+  }
 }

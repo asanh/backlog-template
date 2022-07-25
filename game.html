@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Dark Souls</title>
 
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/game.css" rel="stylesheet">
 </head>
@@ -15,10 +17,19 @@
     <a class="menu-link selected" href="index.html">Backlog</a>
     <a class="menu-link" href="completed.html">Completed</a>
     <a class="menu-link" href="review.html">To Review</a>
+
+
   </div>
   <div class="menu-right">
     <a class="menu-link" href="settings.html">Settings</a>
   </div>
+</div>
+
+<div class="icon-menu">
+  <a class="menu-link-icon selected" href="index.html"><i class="fa fa-home fa-3x"></i></a>
+  <a class="menu-link-icon" href="completed.html"><i class="fa fa-cubes fa-3x"></i></a>
+  <a class="menu-link-icon" href="review.html"><i class="fa fa-crosshairs fa-3x"></i></a>
+  <a class="menu-link-icon" href="settings.html"><i class="fa fa-gear fa-3x"></i></a>
 </div>
 
 <div class="main">
@@ -33,54 +44,114 @@
       >
 
       <div class="game-form">
-        <div class="row">
-          <div class="description-item">
-            <span class="label">Genre:</span>
-            <span class="value">
-              <a href="search.html">Souls-like</a>,
-              <a href="search.html">Action</a>,
-              <a href="search.html">RPG</a>
-            </span>
+        <div class="m-3">
+          <div class="row">
+            <div class="tab-block-title">
+              <span class="block-title">Info</span>
+            </div>
           </div>
-          <div>
-            <span class="label">Platform:</span>
-            <span class="value">
-              <a href="search.html">PC</a>
-            </span>
+          <div class="row">
+            <div class="description-item">
+              <div class="label">Genre:</div>
+              <div class="value">
+                <a href="search.html">Souls-like</a>,
+                <a href="search.html">Action</a>,
+                <a href="search.html">RPG</a>
+              </div>
+            </div>
+            <div class="description-item">
+              <div class="label">Platform:</div>
+              <div class="value">
+                <a href="search.html">PC</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div>
-            <span class="label">Release Date:</span>
-            <span class="value">January <a href="search.html">2012</a></span>
+          <div class="row">
+            <div class="description-item">
+              <div class="label">Release Date:</div>
+              <div class="value">January <a href="search.html">2012</a></div>
+            </div>
+            <div class="description-item">
+              <div class="label">Developer:</div>
+              <div class="value">
+                <a href="search.html">Fromsoftware</a>
+              </div>
+            </div>
           </div>
-          <div>
-            <span class="label">Developer:</span>
-            <span class="value">
-              <a href="search.html">Fromsoftware</a>
-            </span>
+          <div class="row">
+            <div class="description-item">
+              <div class="label">Publisher:</div>
+              <div class="value">
+                <a href="search.html">Bandai Namco</a>
+              </div>
+            </div>
+            <div class="description-item">
+              <div class="label">Metacritic:</div>
+              <div class="value"><span class="metacritic metacritic-good">84</span></div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div>
-            <span class="label">Publisher:</span>
-            <span class="value">
-              <a href="search.html">Bandai Namco</a>
-            </span>
+
+          <div class="row time-to-beat-row">
+            <div class="description-item-full">
+              <div class="label-full">Time To Beat:</div>
+              <div class="value time-to-beat">
+                <div class="time-to-beat-col">
+                  <div class="time-to-beat-header">Main</div>
+                  <div class="time-to-beat-value">42 Hours</div>
+                </div>
+                <div class="time-to-beat-col">
+                  <div class="time-to-beat-header">Main+Extra</div>
+                  <div class="time-to-beat-value">60 Hours</div>
+                </div>
+                <div class="time-to-beat-col">
+                  <div class="time-to-beat-header">Completionist</div>
+                  <div class="time-to-beat-value">106 Hours</div>
+                </div>
+                <div class="time-to-beat-col">
+                  <div class="time-to-beat-header">All Styles</div>
+                  <div class="time-to-beat-value">57 Hours</div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <span class="label">Metacritic:</span>
-            <span class="value">11</span>
+
+          <div class="row">
+            <div class="tab-block-title second-block">
+              <span class="block-title">Playthrough</span>
+            </div>
           </div>
-          <div>
-            <span class="label">Time To Beat:</span>
-            <span class="value">25 hours</span>
+
+          <div class="row">
+            <div class="description-item">
+              <div class="label">Status</div>
+              <div class="value">In Progress</div>
+            </div>
+            <div class="description-item">
+              <div class="label">Score</div>
+              <div class="value">10/10</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="description-item">
+              <div class="label">Hours</div>
+              <div class="value">29</div>
+            </div>
+            <div class="description-item">
+              <div class="label">Platform</div>
+              <div class="value">Steam</div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="description-item">
+              <div class="label">Notes</div>
+              <div class="value"><p>Need to complete Priscilla's DLC and try Bleed build. Or Mage build, I don't know yet.</p></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-
   </div>
 </div>
 
