@@ -9,6 +9,15 @@ body {
   background-color: #23222d;
 }
 
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
 .menu {
   position: fixed;
   top: 0;
@@ -23,20 +32,29 @@ body {
   display: none;
 }
 
-.menu-link {
-  padding: 7px 20px;
-  background-color: #000;
-  color: #FFF;
-  display: inline-flex;
-  text-decoration: none;
-}
-
-.menu-link:hover {
-  text-decoration: underline;
-}
-
-.selected {
+.button-orange {
   background-color: #d99243 !important;
+}
+
+.button-orange:hover {
+  background-color: #bc8236 !important;
+}
+
+.button {
+  border-radius: 5px;
+  height: 38px;
+}
+
+.button, .menu-link {
+  padding: 7px 20px;
+}
+
+.button-black {
+  background-color: #18181e;
+}
+
+.button-black:hover {
+  background-color: #303036;
 }
 
 .menu-left, .menu-right {
@@ -52,7 +70,18 @@ body {
 
 .title {
   margin-left: 40px;
-  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.toolbar {
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row;
+  color: white;
 }
 
 .content {
@@ -123,13 +152,19 @@ img {
   }
 
   .main {
-    margin-top: 20px;
+    margin-top: 0;
   }
 
   .title {
     margin-left: 0;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .toolbar, .toolbar .button:not(:first-child) {
+    margin-right: 0 !important;
   }
 }
 

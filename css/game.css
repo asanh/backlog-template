@@ -71,7 +71,7 @@
   font-size: larger;
   text-decoration: underline #d99243;
   display: flex;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   justify-content: center;
 }
 
@@ -79,6 +79,13 @@
   margin-top: 50px;
 }
 
+.toolbar .button {
+  margin-right: 10px;
+}
+
+.game-form a {
+  color: #d99243 !important;
+}
 
 @media (max-width: 1440px) {
   .main-img {
