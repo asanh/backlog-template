@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Dark Souls</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/game.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="menu">
+  <div class="menu-left">
+    <a class="menu-link button-orange" href="index.html">Backlog</a>
+    <a class="menu-link button-black" href="completed.html">Completed</a>
+    <a class="menu-link button-black" href="review.html">To Review</a>
+  </div>
+  <div class="menu-right">
+    <a class="menu-link button-black" href="settings.html">Settings</a>
+  </div>
+</div>
+
+<div class="icon-menu">
+  <a class="menu-link-icon button-orange" href="index.html"><i class="fa fa-home fa-3x"></i></a>
+  <a class="menu-link-icon" href="completed.html"><i class="fa fa-cubes fa-3x"></i></a>
+  <a class="menu-link-icon" href="review.html"><i class="fa fa-crosshairs fa-3x"></i></a>
+  <a class="menu-link-icon" href="settings.html"><i class="fa fa-gear fa-3x"></i></a>
+</div>
+
+<div class="main">
+  <div class="title">
+    <div>
+      <h2>Dark Souls</h2>
+    </div>
+
+    <div class="toolbar">
+      <a href="game-edit.html" class="button button-orange">Edit</a>
+      <a href="#" class="button button-black">Delete</a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="game-card">
+      <img class="main-img"
+           src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+           alt="Dark Souls"
+      >
+
+      <div class="game-form">
+        <div class="m-3">
+          <div class="row">
+            <div class="tab-block-title">
+              <span class="block-title">Info</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="description-item">
+              <div class="label">Genre:</div>
+              <div class="value">
+                <ul>
+                  <li>Souls-like <span class="fa fa-remove"></span></li>
+                  <li>Action <span class="fa fa-remove"></span></li>
+                  <li>RPG <span class="fa fa-remove"></span></li>
+                </ul>
+                <div class="add-input">
+                  <input type="text" id="new-genre" name="new-genre" placeholder="Platformer">
+                  <span class="fa fa-check"></span>
+                </div>
+              </div>
+            </div>
+            <div class="description-item">
+              <div class="label">Platform:</div>
+              <div class="value">
+                <ul>
+                  <li>PC <span class="fa fa-remove"></span></li>
+                </ul>
+                <div class="add-input">
+                  <span class="fa fa-plus"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="description-item input-row">
+              <div class="label">Release Date:</div>
+              <div class="value">
+                <select name="release-month">
+                  <option value="1" selected>January</option>
+                  <option value="2">February</option>
+                  <option value="3">March</option>
+                  <option value="4">April</option>
+                  <option value="5">May</option>
+                  <option value="6">June</option>
+                  <option value="7">July</option>
+                  <option value="8">August</option>
+                  <option value="9">September</option>
+                  <option value="10">October</option>
+                  <option value="11">November</option>
+                  <option value="12">December</option>
+                </select>
+
+                <input class="release-year-input"
+                       type="text"
+                       name="release-year"
+                       maxlength="4"
+                       placeholder="2022"
+                >
+              </div>
+            </div>
+            <div class="description-item input-row">
+              <div class="label">Developer:</div>
+              <div class="value">
+                <input type="text" name="developer" placeholder="FromSoftware">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="description-item input-row">
+              <div class="label">Publisher:</div>
+              <div class="value">
+                <input type="text" name="publisher" placeholder="Bandai Namco">
+              </div>
+            </div>
+            <div class="description-item input-row">
+              <div class="label">Metacritic:</div>
+              <div class="value">
+                <input class="metacritic-input"
+                       type="text"
+                       name="metacritic"
+                       placeholder="84"
+                       maxlength="3"
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="description-item input-row">
+              <div class="label">Time To Beat:</div>
+              <div class="value">
+                <input type="text"
+                       class="time-to-beat-input"
+                       name="time-to-beat-id"
+                       placeholder="2224"
+                       maxlength="6"
+                >
+              </div>
+            </div>
+
+            <div class="description-item input-row">
+              <div class="label">New Image:</div>
+              <div class="value">
+                <input type="text" name="new-image">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="tab-block-title second-block">
+              <span class="block-title">Playthrough</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="description-item input-row">
+              <div class="label">Status</div>
+              <div class="value">
+                <select>
+                  <option value="1">Backlog</option>
+                  <option value="2">In Progress</option>
+                  <option value="3">On Pause</option>
+                  <option value="4">Dropped</option>
+                  <option value="5">Review</option>
+                  <option value="6">Removed</option>
+                </select>
+              </div>
+            </div>
+            <div class="description-item input-row">
+              <div class="label">Score</div>
+              <div class="value">
+                <input type="text"
+                       class="score-input"
+                       name="score"
+                       placeholder="8.5"
+                       maxlength="3"
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="description-item input-row">
+              <div class="label">Hours</div>
+              <div class="value">
+                <input type="text"
+                       class="hours-input"
+                       name="hours"
+                       placeholder="123"
+                       maxlength="5"
+                >
+              </div>
+            </div>
+            <div class="description-item input-row">
+              <div class="label">Platform</div>
+              <div class="value">
+                <select name="platform">
+                  <option value="1">PC</option>
+                  <option value="2">Playstation</option>
+                  <option value="3">Xbox</option>
+                  <option value="4">Switch</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="description-item">
+              <div class="label">Notes</div>
+              <div class="value">
+                <textarea name="notes" class="notes-textarea" placeholder="Text..."></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

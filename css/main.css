@@ -129,6 +129,10 @@ img {
   font-size: larger;
 }
 
+.fa-remove, .fa-check, .fa-plus {
+  color: #d99243;
+}
+
 @media (max-width: 700px) {
   .menu {
     display: none;

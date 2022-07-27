@@ -87,6 +87,81 @@
   color: #d99243 !important;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+}
+
+input, select {
+  padding: 5px 15px;
+  border: none;
+  border-bottom: 2px solid #d99243;
+  border-radius: 5px;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+}
+
+.fa-check {
+  margin-left: 5px;
+}
+
+.add-input {
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+.release-year-input {
+  width: 25%;
+}
+
+.input-row > .label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.input-row {
+  line-height: 20px;
+}
+
+.metacritic-input {
+  width: 25%;
+}
+
+.time-to-beat-input {
+  width: 35%;
+}
+
+.score-input {
+  width: 25%;
+}
+
+.hours-input {
+  width: 30%;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.notes-textarea {
+  padding: 5px 15px;
+  border: 1px solid #d99243;
+  border-bottom: 2px solid #d99243;
+  border-top: none;
+  border-radius: 5px;
+  color: white;
+  width: 100%;
+  height: 130px;
+}
+
 @media (max-width: 1440px) {
   .main-img {
     width: 320px;
