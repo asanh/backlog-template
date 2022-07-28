@@ -65,7 +65,12 @@
                   <li>RPG <span class="fa fa-remove"></span></li>
                 </ul>
                 <div class="add-input">
-                  <input type="text" id="new-genre" name="new-genre" placeholder="Platformer">
+                  <input type="text"
+                         class="genre-input"
+                         id="new-genre"
+                         name="new-genre"
+                         placeholder="Platformer"
+                  >
                   <span class="fa fa-check"></span>
                 </div>
               </div>
@@ -84,9 +89,9 @@
           </div>
           <div class="row">
             <div class="description-item input-row">
-              <div class="label">Release Date:</div>
+              <label for="release-year" class="label">Release Date:</label>
               <div class="value">
-                <select name="release-month">
+                <select id="release-month" name="release-month">
                   <option value="1" selected>January</option>
                   <option value="2">February</option>
                   <option value="3">March</option>
@@ -103,6 +108,7 @@
 
                 <input class="release-year-input"
                        type="text"
+                       id="release-year"
                        name="release-year"
                        maxlength="4"
                        placeholder="2022"
@@ -110,24 +116,35 @@
               </div>
             </div>
             <div class="description-item input-row">
-              <div class="label">Developer:</div>
+              <label for="developer" class="label">Developer:</label>
               <div class="value">
-                <input type="text" name="developer" placeholder="FromSoftware">
+                <input type="text"
+                       class="developer-input"
+                       name="developer"
+                       id="developer"
+                       placeholder="FromSoftware"
+                >
               </div>
             </div>
           </div>
           <div class="row">
             <div class="description-item input-row">
-              <div class="label">Publisher:</div>
+              <label for="publisher" class="label">Publisher:</label>
               <div class="value">
-                <input type="text" name="publisher" placeholder="Bandai Namco">
+                <input type="text"
+                       class="publisher-input"
+                       name="publisher"
+                       id="publisher"
+                       placeholder="Bandai Namco"
+                >
               </div>
             </div>
             <div class="description-item input-row">
-              <div class="label">Metacritic:</div>
+              <label for="metacritic" class="label">Metacritic:</label>
               <div class="value">
                 <input class="metacritic-input"
                        type="text"
+                       id="metacritic"
                        name="metacritic"
                        placeholder="84"
                        maxlength="3"
@@ -138,10 +155,11 @@
 
           <div class="row">
             <div class="description-item input-row">
-              <div class="label">Time To Beat:</div>
+              <label for="time-to-beat-id" class="label">Time To Beat id:</label>
               <div class="value">
                 <input type="text"
                        class="time-to-beat-input"
+                       id="time-to-beat-id"
                        name="time-to-beat-id"
                        placeholder="2224"
                        maxlength="6"
@@ -150,9 +168,9 @@
             </div>
 
             <div class="description-item input-row">
-              <div class="label">New Image:</div>
+              <label for="new-image" class="label">New Image:</label>
               <div class="value">
-                <input type="text" name="new-image">
+                <input id="new-image" class="new-image-input" type="text" name="new-image">
               </div>
             </div>
           </div>
@@ -165,9 +183,9 @@
 
           <div class="row">
             <div class="description-item input-row">
-              <div class="label">Status</div>
+              <label for="status" class="label">Status:</label>
               <div class="value">
-                <select>
+                <select name="status" id="status">
                   <option value="1">Backlog</option>
                   <option value="2">In Progress</option>
                   <option value="3">On Pause</option>
@@ -178,10 +196,11 @@
               </div>
             </div>
             <div class="description-item input-row">
-              <div class="label">Score</div>
+              <label for="score" class="label">Score:</label>
               <div class="value">
                 <input type="text"
                        class="score-input"
+                       id="score"
                        name="score"
                        placeholder="8.5"
                        maxlength="3"
@@ -192,10 +211,11 @@
 
           <div class="row">
             <div class="description-item input-row">
-              <div class="label">Hours</div>
+              <label for="hours" class="label">Hours:</label>
               <div class="value">
                 <input type="text"
                        class="hours-input"
+                       id="hours"
                        name="hours"
                        placeholder="123"
                        maxlength="5"
@@ -203,9 +223,9 @@
               </div>
             </div>
             <div class="description-item input-row">
-              <div class="label">Platform</div>
+              <label for="platform" class="label">Platform:</label>
               <div class="value">
-                <select name="platform">
+                <select name="platform" id="platform">
                   <option value="1">PC</option>
                   <option value="2">Playstation</option>
                   <option value="3">Xbox</option>
@@ -217,9 +237,13 @@
 
           <div class="row">
             <div class="description-item">
-              <div class="label">Notes</div>
+              <label for="notes" class="label">Notes:</label>
               <div class="value">
-                <textarea name="notes" class="notes-textarea" placeholder="Text..."></textarea>
+                <textarea name="notes"
+                          id="notes"
+                          class="notes-textarea"
+                          placeholder="Text..."
+                ></textarea>
               </div>
             </div>
           </div>

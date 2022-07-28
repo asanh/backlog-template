@@ -118,7 +118,7 @@ input:focus {
 }
 
 .release-year-input {
-  width: 25%;
+  width: 66px;
 }
 
 .input-row > .label {
@@ -132,19 +132,19 @@ input:focus {
 }
 
 .metacritic-input {
-  width: 25%;
+  width: 57px;
 }
 
 .time-to-beat-input {
-  width: 35%;
+  width: 84px;
 }
 
 .score-input {
-  width: 25%;
+  width: 57px;
 }
 
 .hours-input {
-  width: 30%;
+  width: 75px;
 }
 
 textarea:focus {
@@ -185,6 +185,12 @@ textarea:focus {
   .time-to-beat-col {
     width: 100px;
   }
+
+  ul {
+    columns: 1;
+    -webkit-columns: 1;
+    -moz-columns: 1;
+  }
 }
 
 @media (max-width: 1360px) {
@@ -210,7 +216,7 @@ textarea:focus {
   }
 
   .label {
-    width: 40%;
+    width: 30%;
   }
 
   .label-full {
@@ -219,19 +225,56 @@ textarea:focus {
 
   .value {
     width: 50%;
+  }
+
+  .tab-block-title {
+    margin-bottom: 30px;
   }
 }
 
 @media (max-width: 600px) {
+  .row {
+    margin-left: 0;
+  }
+
   .label {
-    width: 50%;
+    width: 35%;
   }
 
   .value {
-    width: 40%;
+    width: 65%;
   }
 
   .label-full {
     width: 50%;
+  }
+
+  input {
+    padding: 5px 5px;
+    margin-left: 5px;
+  }
+
+  .genre-input {
+    width: 120px;
+  }
+
+  .release-year-input {
+    width: 50px;
+  }
+
+  .developer-input, .publisher-input, .new-image-input {
+    width: 160px;
+  }
+
+  .metacritic-input, .score-input {
+    width: 40px;
+  }
+
+  .time-to-beat-input {
+    width: 65px;
+  }
+
+  .hours-input {
+    width: 60px;
   }
 }
