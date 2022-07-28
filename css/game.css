@@ -67,23 +67,32 @@
 }
 
 .tab-block-title {
-  width: 100%;
+  width: 96%;
   font-size: larger;
-  text-decoration: underline #d99243;
+  /*text-decoration: underline #d99243;*/
   display: flex;
   margin-bottom: 10px;
-  justify-content: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d99243;
+}
+
+.block-button {
+  margin-right: 5px;
+}
+
+.block-button .fa-remove, .block-button .fa-check {
+  color: white !important;
 }
 
 .second-block {
   margin-top: 50px;
 }
 
-.toolbar .button {
+.game-form-toolbar .button {
   margin-right: 10px;
 }
 
-.game-form a {
+.description-item a {
   color: #d99243 !important;
 }
 
@@ -98,6 +107,7 @@ ul {
 
 input, select {
   padding: 5px 15px;
+  margin-left: 5px;
   border: none;
   border-bottom: 2px solid #d99243;
   border-radius: 5px;
@@ -114,7 +124,6 @@ input:focus {
 
 .add-input {
   margin-top: 10px;
-  margin-left: 5px;
 }
 
 .release-year-input {
