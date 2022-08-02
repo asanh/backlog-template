@@ -178,6 +178,26 @@ img {
   opacity: 0;
 }
 
+.user-profile-pic {
+  width: 22px;
+  margin-left: 10px;
+  border-radius: 50%;
+}
+
+.logout-button {
+  font-size: 16px;
+  height: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 7px 15px;
+}
+
+.button-black span {
+  background-color: inherit;
+}
+
 @media (max-width: 700px) {
   .menu {
     display: none;
