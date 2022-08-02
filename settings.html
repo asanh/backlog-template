@@ -1,10 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Account Settings</title>
+
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/settings.css" rel="stylesheet">
 </head>
 <body>
+
+<div class="menu">
+  <div class="menu-left">
+    <a class="menu-link button-orange" href="index.html">Backlog</a>
+    <a class="menu-link button-black" href="completed.html">Completed</a>
+    <a class="menu-link button-black" href="review.html">To Review</a>
+  </div>
+  <div class="menu-right">
+    <a class="menu-link button-black" href="settings.html">
+      <span>Platon</span>
+      <img class="user-profile-pic" src="images/profile-blank.png" alt="Account Settings">
+    </a>
+    <a class="menu-link button-black logout-button" href="login.html">
+      <span class="fa fa-sign-out"></span>
+    </a>
+  </div>
+</div>
+
+<div class="icon-menu">
+  <a class="menu-link-icon button-orange" href="index.html"><i class="fa fa-home fa-3x"></i></a>
+  <a class="menu-link-icon" href="completed.html"><i class="fa fa-cubes fa-3x"></i></a>
+  <a class="menu-link-icon" href="review.html"><i class="fa fa-crosshairs fa-3x"></i></a>
+  <a class="menu-link-icon" href="settings.html"><i class="fa fa-gear fa-3x"></i></a>
+</div>
+
+<div class="main">
+  <div class="title">
+    <h2>Account Settings</h2>
+    <div class="toolbar">
+      <a href="index.html" class="block-button">
+        <span class="fa fa-check"></span>
+      </a>
+      <a href="index.html" class="block-button">
+        <span class="fa fa-ban"></span>
+      </a>
+    </div>
+  </div>
+  <div class="content">
+    <div class="image-row">
+      <img class="user-profile-pic-large" src="images/profile-blank.png" alt="Account Profile Picture">
+      <div class="image-input-block">
+        <label for="new-image" class="image-label">New Image:</label>
+        <div class="image-value">
+          <input id="new-image" class="new-image-input" type="text" name="new-image">
+        </div>
+      </div>
+    </div>
+
+    <div class="settings">
+      <div class="row">
+        <div class="description-item input-row">
+          <label for="name" class="label">Name:</label>
+          <div class="value">
+            <input type="text"
+                   class="hours-input"
+                   id="name"
+                   name="name"
+                   placeholder="Your Name"
+                   value="Platon"
+            >
+          </div>
+        </div>
+        <div class="description-item input-row">
+          <label for="steam" class="label">Steam id:</label>
+          <div class="value">
+            <input type="text"
+                   class="hours-input"
+                   id="steam"
+                   name="steam"
+                   value="asanh"
+                   placeholder="id"
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

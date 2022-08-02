@@ -96,28 +96,6 @@
   color: #d99243 !important;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  columns: 2;
-  -webkit-columns: 2;
-  -moz-columns: 2;
-}
-
-input, select {
-  padding: 5px 15px;
-  margin-left: 5px;
-  border: none;
-  border-bottom: 2px solid #d99243;
-  border-radius: 5px;
-  color: white;
-}
-
-input:focus {
-  outline: none;
-}
-
 .fa-check {
   margin-left: 5px;
 }

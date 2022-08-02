@@ -1,0 +1,64 @@
+.user-profile-pic-large {
+  width: 80px;
+  border-radius: 50%;
+}
+
+.image-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.image-input-block {
+  margin-left: 40px;
+  display: flex;
+  width: 50%;
+}
+
+.image-label, .image-value {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.image-value {
+  margin-left: 20px;
+  width: 40%;
+}
+
+.settings {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 99%;
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+.description-item {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.label {
+  width: 20%;
+}
+
+.value {
+  width: 60%;
+}
+
+.input-row > .label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 32px;
+}
+
+
+
