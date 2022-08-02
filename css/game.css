@@ -126,7 +126,7 @@ input:focus {
   margin-top: 10px;
 }
 
-.release-year-input {
+.release-year-input, .completion-year-input {
   width: 66px;
 }
 
@@ -134,6 +134,7 @@ input:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 32px;
 }
 
 .input-row {
@@ -267,7 +268,7 @@ textarea:focus {
     width: 120px;
   }
 
-  .release-year-input {
+  .release-year-input, .completion-year-input {
     width: 50px;
   }
 
@@ -285,5 +286,9 @@ textarea:focus {
 
   .hours-input {
     width: 60px;
+  }
+
+  .input-row > .label {
+    height: auto;
   }
 }
