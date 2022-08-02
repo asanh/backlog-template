@@ -1,12 +1,13 @@
 .game {
   width: 180px;
-  margin: 0 20px;
+  margin: 0 20px 10px;
   display: flex;
   flex-direction: column;
 }
 
 .game-img {
   width: inherit;
+  max-width: 180px;
   height: 230px;
 }
 
@@ -17,4 +18,32 @@
 .game-link {
   text-decoration: none;
   color: white;
+}
+
+.game-title {
+  margin-top: 10px;
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
+.game-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+  height: 24px;
+}
+
+.game-stats span {
+  width: 42px;
+  display: flex;
+}
+
+.game-stats .fa {
+  align-self: center;
+}
+
+.fa-game-title {
+  margin-left: 5px;
 }
