@@ -179,14 +179,31 @@ img {
   justify-content: space-between;
 }
 
-.collapsible-title, .collapsible-toolbar {
-  color: #d99243;
+.collapsible-header * {
   background-color: inherit;
-  font-size: 28px;
 }
 
-.collapsible-toolbar span {
-  background-color: inherit;
+.collapsible-title, .collapsible-toolbar {
+  color: #d99243;
+  font-size: 28px;
+  display: flex;
+  flex-direction: row;
+}
+
+.collapsible.title-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.collapsible-title-info {
+  padding-top: 1px;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
 }
 
 .collapsible-content, .collapsible-content-inner {
