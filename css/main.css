@@ -187,7 +187,15 @@ img {
   color: #d99243;
   font-size: 28px;
   display: flex;
+}
+
+.collapsible-title {
   flex-direction: row;
+}
+
+.collapsible-toolbar {
+  flex-direction: column;
+  justify-content: center;
 }
 
 .collapsible.title-date {
