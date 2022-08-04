@@ -14,8 +14,8 @@
 
 <div class="menu">
   <div class="menu-left">
-    <a class="menu-link button-orange" href="index.html">Backlog</a>
-    <a class="menu-link button-black" href="completed.html">Completed</a>
+    <a class="menu-link button-black" href="index.html">Backlog</a>
+    <a class="menu-link button-orange" href="completed.html">Completed</a>
     <a class="menu-link button-black" href="review.html">To Review</a>
   </div>
   <div class="menu-right">
@@ -42,224 +42,304 @@
   </div>
   <div class="content">
 
-    <div class="collapsible">
-      <div class="collapsible-header">
-        <div class="collapsible-title">
-          <div class="collapsible-title-date">
-            <span>2022</span>
+    <div class="filter">
+      <div class="filter-block">
+        <div class="filter-block-title">
+          <span>Genre</span>
+          <div class="collapsible-toolbar">
+            <span class="fa fa-angle-down"></span>
           </div>
-          <div class="collapsible-title-info">
+        </div>
+        <div class="filter-block-options">
+          <label for="genre1" class="filter-block-option">
+            <input type="checkbox" name="genre1" id="genre1">
+            <span class="checkbox-span">
+              <span class="checkmark"></span>
+              <span class="option-text">RPG</span>
+            </span>
+          </label>
+
+          <label for="genre2" class="filter-block-option">
+            <input type="checkbox" name="genre2" id="genre2">
+            <span class="checkbox-span">
+              <span class="checkmark"></span>
+              <span class="option-text">Action</span>
+            </span>
+          </label>
+
+          <label for="genre3" class="filter-block-option">
+            <input type="checkbox" name="genre3" id="genre3">
+            <span class="checkbox-span">
+              <span class="checkmark"></span>
+              <span class="option-text">Platformer</span>
+            </span>
+          </label>
+        </div>
+      </div>
+
+      <div class="filter-block">
+        <div class="filter-block-title">
+          <span>Platform</span>
+          <div class="collapsible-toolbar">
+            <span class="fa fa-angle-down"></span>
+          </div>
+        </div>
+        <div class="filter-block-options">
+          <label for="platform1" class="filter-block-option">
+            <input type="checkbox" name="platform1" id="platform1">
+            <span class="checkbox-span">
+              <span class="checkmark"></span>
+              <span class="option-text">PC</span>
+            </span>
+          </label>
+
+          <label for="platform2" class="filter-block-option">
+            <input type="checkbox" name="platform2" id="platform2">
+            <span class="checkbox-span">
+              <span class="checkmark"></span>
+              <span class="option-text">Playstation</span>
+            </span>
+          </label>
+
+          <label for="platform3" class="filter-block-option">
+            <input type="checkbox" name="platform3" id="platform3">
+            <span class="checkbox-span">
+              <span class="checkmark"></span>
+              <span class="option-text">Xbox</span>
+            </span>
+          </label>
+
+          <label for="platform4" class="filter-block-option">
+            <input type="checkbox" name="platform4" id="platform4">
+            <span class="checkbox-span">
+              <span class="checkmark"></span>
+              <span class="option-text">Switch</span>
+            </span>
+          </label>
+        </div>
+      </div>
+    </div>
+
+    <div class="completed-content">
+      <div class="collapsible">
+        <div class="collapsible-header">
+          <div class="collapsible-title">
+            <div class="collapsible-title-date">
+              <span>2022</span>
+            </div>
+            <div class="collapsible-title-info">
             <span>
               500 <span class="fa fa-clock"></span>
               20 <span class="fa fa-dungeon"></span>
             </span>
+            </div>
+          </div>
+          <div class="collapsible-toolbar">
+            <span class="fa fa-angle-down"></span>
           </div>
         </div>
-        <div class="collapsible-toolbar">
-          <span class="fa fa-angle-down"></span>
-        </div>
-      </div>
 
-      <div class="collapsible-content">
+        <div class="collapsible-content">
 
-        <div class="collapsible">
-          <div class="collapsible-header">
-            <div class="collapsible-title">
-              <div class="collapsible-title-date">
-                <span>July</span>
+          <div class="collapsible">
+            <div class="collapsible-header">
+              <div class="collapsible-title">
+                <div class="collapsible-title-date">
+                  <span>July</span>
+                </div>
+                <div class="collapsible-title-info">
+                <span>
+                  150 <span class="fa fa-clock"></span>
+                  5 <span class="fa fa-dungeon"></span>
+                </span>
+                </div>
               </div>
-              <div class="collapsible-title-info">
-            <span>
-              150 <span class="fa fa-clock"></span>
-              5 <span class="fa fa-dungeon"></span>
-            </span>
+              <div class="collapsible-toolbar">
+                <span class="fa fa-angle-down"></span>
               </div>
             </div>
-            <div class="collapsible-toolbar">
-              <span class="fa fa-angle-down"></span>
+
+            <div class="collapsible-content-inner">
+              <div class="game">
+                <a class="game-link" href="game.html">
+                  <img class="game-img"
+                       src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+                       alt="Dark Souls"
+                  >
+                  <div class="game-title">Dark Souls</div>
+                  <div class="game-stats">
+                    <span class="justify-content-start">29H</span>
+                    <span class="justify-content-center">10/10</span>
+                    <span class="fa fa-circle-check justify-content-end"></span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="game">
+                <a class="game-link" href="game.html">
+                  <img class="game-img"
+                       src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+                       alt="Dark Souls"
+                  >
+                  <div class="game-title">Dark Souls</div>
+                  <div class="game-stats">
+                    <span class="justify-content-start">29H</span>
+                    <span class="justify-content-center">10/10</span>
+                    <span class="fa fa-circle-minus justify-content-end"></span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="game">
+                <a class="game-link" href="game.html">
+                  <img class="game-img"
+                       src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+                       alt="Dark Souls"
+                  >
+                  <div class="game-title">Dark Souls</div>
+                  <div class="game-stats">
+                    <span class="justify-content-start">29H</span>
+                    <span class="justify-content-center">10/10</span>
+                    <span class="fa fa-circle-minus justify-content-end"></span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="game">
+                <a class="game-link" href="game.html">
+                  <img class="game-img"
+                       src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+                       alt="Dark Souls"
+                  >
+                  <div class="game-title">Dark Souls</div>
+                  <div class="game-stats">
+                    <span class="justify-content-start">29H</span>
+                    <span class="justify-content-center">10/10</span>
+                    <span class="fa fa-circle-minus justify-content-end"></span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="game">
+                <a class="game-link" href="game.html">
+                  <img class="game-img"
+                       src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+                       alt="Dark Souls"
+                  >
+                  <div class="game-title">Dark Souls</div>
+                  <div class="game-stats">
+                    <span class="justify-content-start">29H</span>
+                    <span class="justify-content-center">10/10</span>
+                    <span class="fa fa-circle-minus justify-content-end"></span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="game">
+                <a class="game-link" href="game.html">
+                  <img class="game-img"
+                       src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+                       alt="Dark Souls"
+                  >
+                  <div class="game-title">Dark Souls</div>
+                  <div class="game-stats">
+                    <span class="justify-content-start">29H</span>
+                    <span class="justify-content-center">10/10</span>
+                    <span class="fa fa-circle-minus justify-content-end"></span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="game">
+                <a class="game-link" href="game.html">
+                  <img class="game-img"
+                       src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+                       alt="Dark Souls"
+                  >
+                  <div class="game-title">Dark Souls</div>
+                  <div class="game-stats">
+                    <span class="justify-content-start">29H</span>
+                    <span class="justify-content-center">10/10</span>
+                    <span class="fa fa-circle-minus justify-content-end"></span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="game">
+                <a class="game-link" href="game.html">
+                  <img class="game-img"
+                       src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+                       alt="Dark Souls"
+                  >
+                  <div class="game-title">Dark Souls</div>
+                  <div class="game-stats">
+                    <span class="justify-content-start">29H</span>
+                    <span class="justify-content-center">10/10</span>
+                    <span class="fa fa-circle-minus justify-content-end"></span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="game">
+                <a class="game-link" href="game.html">
+                  <img class="game-img"
+                       src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+                       alt="Dark Souls"
+                  >
+                  <div class="game-title">Dark Souls</div>
+                  <div class="game-stats">
+                    <span class="justify-content-start">29H</span>
+                    <span class="justify-content-center">10/10</span>
+                    <span class="fa fa-circle-minus justify-content-end"></span>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="collapsible-content-inner">
-            <div class="game">
-              <a class="game-link" href="game.html">
-                <img class="game-img"
-                     src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
-                     alt="Dark Souls"
-                >
-                <div class="game-title">Dark Souls</div>
-                <div class="game-stats">
-                  <span class="justify-content-start">29H</span>
-                  <span class="justify-content-center">10/10</span>
-                  <span class="fa fa-circle-check justify-content-end"></span>
-                </div>
-              </a>
+          <div class="collapsible">
+            <div class="collapsible-header">
+              <div class="collapsible-title">
+                June
+              </div>
+              <div class="collapsible-toolbar">
+                <span class="fa fa-angle-up"></span>
+              </div>
             </div>
 
-            <div class="game">
-              <a class="game-link" href="game.html">
-                <img class="game-img"
-                     src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
-                     alt="Dark Souls"
-                >
-                <div class="game-title">Dark Souls</div>
-                <div class="game-stats">
-                  <span class="justify-content-start">29H</span>
-                  <span class="justify-content-center">10/10</span>
-                  <span class="fa fa-circle-minus justify-content-end"></span>
-                </div>
-              </a>
-            </div>
-
-            <div class="game">
-              <a class="game-link" href="game.html">
-                <img class="game-img"
-                     src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
-                     alt="Dark Souls"
-                >
-                <div class="game-title">Dark Souls</div>
-                <div class="game-stats">
-                  <span class="justify-content-start">29H</span>
-                  <span class="justify-content-center">10/10</span>
-                  <span class="fa fa-circle-minus justify-content-end"></span>
-                </div>
-              </a>
-            </div>
-
-            <div class="game">
-              <a class="game-link" href="game.html">
-                <img class="game-img"
-                     src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
-                     alt="Dark Souls"
-                >
-                <div class="game-title">Dark Souls</div>
-                <div class="game-stats">
-                  <span class="justify-content-start">29H</span>
-                  <span class="justify-content-center">10/10</span>
-                  <span class="fa fa-circle-minus justify-content-end"></span>
-                </div>
-              </a>
-            </div>
-
-            <div class="game">
-              <a class="game-link" href="game.html">
-                <img class="game-img"
-                     src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
-                     alt="Dark Souls"
-                >
-                <div class="game-title">Dark Souls</div>
-                <div class="game-stats">
-                  <span class="justify-content-start">29H</span>
-                  <span class="justify-content-center">10/10</span>
-                  <span class="fa fa-circle-minus justify-content-end"></span>
-                </div>
-              </a>
-            </div>
-
-            <div class="game">
-              <a class="game-link" href="game.html">
-                <img class="game-img"
-                     src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
-                     alt="Dark Souls"
-                >
-                <div class="game-title">Dark Souls</div>
-                <div class="game-stats">
-                  <span class="justify-content-start">29H</span>
-                  <span class="justify-content-center">10/10</span>
-                  <span class="fa fa-circle-minus justify-content-end"></span>
-                </div>
-              </a>
-            </div>
-
-            <div class="game">
-              <a class="game-link" href="game.html">
-                <img class="game-img"
-                     src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
-                     alt="Dark Souls"
-                >
-                <div class="game-title">Dark Souls</div>
-                <div class="game-stats">
-                  <span class="justify-content-start">29H</span>
-                  <span class="justify-content-center">10/10</span>
-                  <span class="fa fa-circle-minus justify-content-end"></span>
-                </div>
-              </a>
-            </div>
-
-            <div class="game">
-              <a class="game-link" href="game.html">
-                <img class="game-img"
-                     src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
-                     alt="Dark Souls"
-                >
-                <div class="game-title">Dark Souls</div>
-                <div class="game-stats">
-                  <span class="justify-content-start">29H</span>
-                  <span class="justify-content-center">10/10</span>
-                  <span class="fa fa-circle-minus justify-content-end"></span>
-                </div>
-              </a>
-            </div>
-
-            <div class="game">
-              <a class="game-link" href="game.html">
-                <img class="game-img"
-                     src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
-                     alt="Dark Souls"
-                >
-                <div class="game-title">Dark Souls</div>
-                <div class="game-stats">
-                  <span class="justify-content-start">29H</span>
-                  <span class="justify-content-center">10/10</span>
-                  <span class="fa fa-circle-minus justify-content-end"></span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="collapsible">
-          <div class="collapsible-header">
-            <div class="collapsible-title">
-              June
-            </div>
-            <div class="collapsible-toolbar">
-              <span class="fa fa-angle-up"></span>
+            <div class="collapsible-content-inner collapsed">
+              <div class="game">
+                <a class="game-link" href="game.html">
+                  <img class="game-img"
+                       src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
+                       alt="Dark Souls"
+                  >
+                  <p class="mt-2">Dark Souls</p>
+                </a>
+              </div>
             </div>
           </div>
 
-          <div class="collapsible-content-inner collapsed">
-            <div class="game">
-              <a class="game-link" href="game.html">
-                <img class="game-img"
-                     src="https://upload.wikimedia.org/wikipedia/ru/0/05/Dark_Souls_Cover_Art.jpeg"
-                     alt="Dark Souls"
-                >
-                <p class="mt-2">Dark Souls</p>
-              </a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="collapsible">
-      <div class="collapsible-header">
-        <div class="collapsible-title">
-          2021
-        </div>
-        <div class="collapsible-toolbar">
-          <span class="fa fa-angle-up"></span>
         </div>
       </div>
 
-      <div class="collapsible-content collapsed">
-        content
+      <div class="collapsible">
+        <div class="collapsible-header">
+          <div class="collapsible-title">
+            2021
+          </div>
+          <div class="collapsible-toolbar">
+            <span class="fa fa-angle-up"></span>
+          </div>
+        </div>
+
+        <div class="collapsible-content collapsed">
+          content
+        </div>
+
       </div>
 
     </div>
-
   </div>
 </div>
 

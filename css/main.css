@@ -121,10 +121,106 @@ ul {
 .content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   color: white;
   padding-bottom: 80px;
   margin: 0 40px;
+}
+
+.filter {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter-block {
+  margin: 0 20px 20px 20px;
+  padding: 10px 20px;
+  background-color: #313140;
+  border-radius: 5px;
+}
+
+.filter-block * {
+  background-color: inherit;
+}
+
+.filter-block-title {
+  color: #f7ab48;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.filter-block-title span {
+  font-size: 20px;
+}
+
+.filter-block-options {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px;
+}
+
+.filter-block-option {
+  margin-top: 5px;
+  line-height: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+.checkbox-span {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.checkmark {
+  height: 16px;
+  width: 16px;
+  background-color: #18181e;
+  display: inline-flex;
+  margin-right: 10px;
+  border-radius: 3px;
+}
+
+.filter-block-option input:checked + .checkbox-span .checkmark:after {
+  display: block;
+}
+
+.filter-block-option:hover .checkmark {
+  border: 1px solid #d99243;
+}
+
+.filter-block-option input:checked + .checkbox-span .checkmark {
+  border: none;
+  background-color: #d99243;
+}
+
+.checkmark:after {
+  display: none;
+  content: "";
+  position: relative;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.games {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 40px;
 }
 
 img {
@@ -164,6 +260,10 @@ img {
 
 .fa-remove, .fa-check, .fa-plus {
   color: #d99243;
+}
+
+.collapsible-conter {
+  margin-left: 10px;
 }
 
 .collapsible {
