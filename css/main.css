@@ -50,6 +50,28 @@ ul {
   justify-content: space-between;
 }
 
+.menu * {
+  background-color: inherit;
+}
+
+.menu-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 30%;
+}
+
+.menu-center .fa {
+  position: absolute;
+  color: white;
+  margin-left: 15px;
+  margin-bottom: 2px;
+}
+
+.search-input {
+  padding: 1px 15px 1px 35px;
+}
+
 .icon-menu {
   display: none;
 }
@@ -369,14 +391,13 @@ img {
     background-color: #18181e;
   }
 
-  .menu-link-icon {
+  .icon-menu * {
     background-color: inherit;
   }
 
   .menu-link-icon i {
     color: white;
     padding: 3px;
-    background-color: inherit;
   }
 
   .main {
